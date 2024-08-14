@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+
+    <link rel="preconnect" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Gothic&display=swap" rel="stylesheet">
+      
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            font-size: 13px;
+
+            font-family: "Naum Gothic", "snas-serif";
+            font-weight: 400;
+            font-style: normal;
+            font-stretch: narrower;
+            letter-spacing: -0.03em;
+            
+        
+        }
+
+        body {
+        background-image: url(images/body_back.PNG);
+        background-repeat: repeat-x;
+      } 
+
+        #wrap{
+            width:1200px;
+            max-width: 1400px;
+            height:300px;
+
+            margin: 0 auto;
+            background-color: #ffffff;
+
+            
+
+        }
+
+        #headertop{
+            width: 1200px;
+            height: 35px;
+            position: relative;
+            background-color: #363434;
+        }
+
+        
+
+        #day{
+            /* width: 200px;
+            height: 50%; */
+            /* background-color: #ffffff; */
+            color: #ffffff;
+            position: absolute;
+            left:o; top:0;
+            padding:0px;
+            margin-left: 20px;
+            line-height: 35px;
+            font-size: 16px;
+            
+        }
+
+        #wet{
+            list-style: none;
+            /* background-color: #ffffff; */
+            color: #ffffff;
+            position: absolute;
+            left:200px;
+            margin-left: 10px;
+            line-height: 35px;
+            
+        }
+
+        #wet>li{
+            float: left;
+            margin-right: 40px;
+            font-size: 12px;
+        }
+
+        #top-nav{
+            list-style: none;
+            /* background-color: #ffffff; */
+            color: #ffffff;
+            position: absolute;
+            right: 0; top:0;
+            margin-right: 80px;
+            line-height: 35px;
+
+        }
+
+        #top-nav>li{
+            float:left;
+            margin-right: 20px;
+            font-size: 12px;
+        }
+
+
+        #headerbottom{
+            width: 1200px;
+            height: 30%;
+            background-color: #ffffff;
+            position: relative;
+            
+
+        }
+
+
+        #logo{
+            width: 200px;
+            height: 45px;
+
+            
+            /* background-color: #9d9d9d; */
+            position: absolute;
+            top:0; left:0;
+            margin-top: 20px;
+            margin-left: 20px;
+            
+            background-image: url(images/logo.png);
+        }
+
+
+        #nav{
+            position: absolute;
+            right:0; top:0;
+            list-style: none;
+        
+            margin-right: 100px;
+            margin-top: 25px;
+            
+
+        }
+        
+        #nav>li{
+            float: left;
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 30px;
+        }
+
+       
+
+
+        #headerbottom-2{
+            list-style: none;
+            width: 1200px;
+            height: 60%;
+            
+            background-color: #ffffff;
+            position: relative;
+
+        }
+
+        #anima{
+            width: 200px;
+            height: 100px;
+            background-image: url(images/main_dream.png);
+            position: absolute;
+            left:0 top:0;
+            margin-top:20px;
+            margin-left:20px;
+        }
+
+        #search{
+            width: 700px;
+            height: 200px;
+            /* border: 1px solid black; */
+            list-style: none;
+            margin-left: 280px;  
+            /* margin: 0 auto;          */
+
+        }
+
+        #search-image{
+            width:600px;
+            height:50px;
+            margin: 0 auto;
+            border: 4px solid red;
+            border-radius: 50px;
+
+        }
+
+        #search-recommend>li{
+            list-style: none;
+            float:left;
+            font-size: 12px;
+            margin-right: 20px;
+            margin-top: 70px;
+
+        }
+
+        
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="headertop">
+            <span id="day">07.31(수)</span>
+            <ul id="wet">
+                <li >미세먼지 |<span> 좋음</span> </li>
+                <li>초미세먼지 |<span> 좋음</span></li>
+                <li>오존 |<span> 좋음</span></li>
+            </ul>
+            <ul id="top-nav">
+                <li id="로그인">로그인 </li>
+                <li id="회원가입">회원가입  </li>
+                <li id="language">LANGUAGE </li>
+                <li id="sns">SNS</li>
+            </ul>
+        </div>
+        <div id="headerbottom">
+            <div id="logo" ></div>
+            <ul id="nav">
+                <li>정보공개</li>
+                <li>참여마당</li>
+                <li>전자민원</li> 
+                <li>행정정보</li>
+                <li>열린경제</li>
+                <li>생활정보</li>
+                <li>대전소개</li>
+                <li>분야별정보</li>
+            </ul>
+        </div>
+        <div id="headerbottom-2">
+            <div id="anima"></div>
+            <div id="search">
+                <div id="search-image"></li>
+                <ul id="search-recommend">
+                    <li><b>추천검색어</b></li>
+                    <li>#0시축제</li>
+                    <li>#OK예약서비스</li>
+                    <li>#대전예술의전당</li>
+                    <li>#대전시립연정국악원</li>
+                    <li>#한밭수목원</li>
+                </li>
+        </div>
+    </div>
+    
+</body>
+</html>

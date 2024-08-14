@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let i=0;
+        let sum=0;
+
+        //1~10까지 더할 때
+        for(i = 1; i < 11; i++){
+            sum=sum+i;
+        }
+
+
+        //짝수만 나오게 할 때
+        for(i = 0; i < 11; i=i+2){
+            if(i%2==0)sum=sum+i;
+        }
+
+
+
+        alert(sum);
+
+    </script>
+</body>
+</html>
