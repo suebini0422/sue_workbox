@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //변수선언(재료)
+        let input;
+        let count;
+        let i;
+        let yacksu;
+
+        //입력
+        while(ture){
+            input= Number(prompt("숫자를 입력하세요."));
+            if(input ==0 || input){ //숫자여부
+                if(input%1 ==0){ //정수여부
+                    break;
+                }else{
+                    alert("정수를 입력해주세요.");
+                }
+            }else{
+                alert("숫자가 아닙니다.\n다시 입력하세요.");
+            }
+            
+        }
+
+        //처리
+        count=0;
+        yacksu="";
+
+        for(i=1; i<input+1; i++){
+            if(input % i ==0){
+                count++;
+                yacksu = yacksu+""+i+",";
+            }
+        }
+
+        //출력
+        alert("약수개수:"+count+"\n약수:"+yacksu);
+
+    </script>
+</body>
+</html>
