@@ -6,24 +6,37 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" placeholder="width" /> 
-    <input type="text" placeholder="height" /> &nbsp;&nbsp;&nbsp;
-    <input type="button" value="제출" onclick=""/>
+    <input type="text" name="width" placeholder="너비" /> X
+    <input type="text" name="height" placeholder="높이"/> &nbsp;&nbsp;&nbsp;
+    <input type="button" value="제출" onclick="btn_click();"/>
 
     <br/>
 
-    <img id="image">
+    <img id="image" width="" height="" src="">
 
-
+   
     <script>
-        //변수를 선언합니다.
-        let image=document.querySelector('#image');
+        function btn_click(){
+            //alert("btn_click");
+            let width=document.querySelector("input[name='width']").value;
+            let height=document.querySelector("input[name='height']").value;
 
-        //속성을 변경합니다.
-        image.src='https://via.placeholder.com/300x200';
-        image.width=300;
-        image.height200;
+            let image=document.querySelector('#image');
+
+            if(!(Number(width)&&Number(height))){
+                alert("입력값이 올바르지 않습니다.");
+                return;
+            }
+
+
+            //속성을 변경합니다.
+            image.src='http://via.placeholder.com/'+width+'X'+height;
+            image.width=width;
+            image.height=height;
+        }
+
     </script>
+
 
 </body>
 </html>
