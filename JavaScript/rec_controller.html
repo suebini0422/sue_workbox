@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,9 +18,9 @@
     세로 : <button id="hp" onclick="verti('+');">＋</button>|<button id="hm" onclick="verti('-');">－</button>&nbsp;&nbsp;
     color : <select name="color" onchange="color();">
                 <option>choice...</option>
-                <option>red</option>
-                <option>blue</option>
-                <option>purple</option>
+                <option vlaue="red">red</option>
+                <option vlaue="blue">blue</option>
+                <option vlaue="purple">purple</option>
             </select>
 
     <hr/>
@@ -33,10 +33,10 @@
             // alert(sign);
             switch(sign){
                 case"+":
-                    box.style.width+=5;
+                    box.style.width=box.clientWidth+5+'px';
                 break;
                 case"-":
-                    box.style.width-=5;
+                    box.style.width=box.clientWidth-5+'px'
                 break;
             }
         }
@@ -44,15 +44,17 @@
         function verti(sign){
             // alert(sign);
             case"+":
-                box.style.height+=5;
+                box.style.width=box.clientheight+5+'px';
             break;
             case"-":
-                box.style.height-=5;
+                box.style.width=box.clientheight+5+'px';
             break;
         }
 
         function color(){
-            alert("change color");
+            let color=document.querySelector("select[name='color']").value;
+            // alert(color);
+            box.style.backgroundColor=color;
         }
 
     </script>
