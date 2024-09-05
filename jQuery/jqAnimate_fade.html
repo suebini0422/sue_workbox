@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <button>go</button>
+    <div id="box"></div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+
+        $('#box').hover(function(){
+            $('#box').animate({
+                width:300,
+                opacity:0.5
+            })
+        }function(){
+            $('#box').animate({
+                width:100,
+                opacity:1
+            })
+        });
+
+        // $('button').click(function(){
+        //     $('#box').animate({
+        //         width:300,
+        //         opacity:0.5,
+        //         }, 500);
+        // });
+
+
+        // $('button').click(function()){
+        //     $('#box').fade(2000)
+        // }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box"></div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $('#box').css({
+            width:100,
+            hright:100,
+            background:'red',
+            position:'absolute',
+            left:10,
+            top:10
+        }).animate({
+            width:'+=300'
+            height:'-=50',
+            left:'+300',
+            opacity:0.5
+        }.500);
+
+
+</body>
+</html>

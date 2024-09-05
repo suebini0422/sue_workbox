@@ -7,7 +7,7 @@
     <style>
         #box{
             width: 100px; height: 100px;
-            background-color: red;
+            /* background-color: red; */
         }
 
         .hover{
@@ -27,8 +27,11 @@
 
         $('#box').hover(function(){
             $('#box').addClass('hover');
+            $('#box').css("background-color","red");
+
         }, function(){
             $('#box').removeClass('hover');
+            $('#box').css("background-color","blue");
         });
 
     </script>
