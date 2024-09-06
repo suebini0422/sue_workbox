@@ -4,31 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div#animate{
+            width: 300;
+            height: 400;
+            background-color: azure;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
 </head>
 <body>
     <button id="start_btn">start</button> &nbsp;&nbsp;&nbsp; 
     <button id="stop_btn">stop</button>
     <br/>
     <img id="image">
+    <div id="animate"></div>
 
 
     <script>
         let image=document.querySelector('#image');
+        let div=document.querySelector('div#animate');
+
         let i=0
-        let motin
+        let motion=null;
 
         document.querySelector('#start_btn').onclick=function(){
             // alert("start btn");
-            motion=setInterval(function(){
-            image.src="images/"+(i%15)+".png";
+            if(!motion){
+                motion=setInterval(function(){
+
+                //image tag
+                image.src="images/"+(i%15)+".png";
                 i=i+1; 
-        },1000/20);
+
+                //div tag
+                div.style.backgroundImage="url('"+"images/"+(i%15)+".png"+"')"
+
+                },1000/20);
+            }
         };
 
 
         document.querySelector('#stop_btn').onclick=function(){
             // alert("start btn");
             clearInterval(motion);
+            motion=null;
         };
 
         
